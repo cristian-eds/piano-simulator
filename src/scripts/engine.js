@@ -11,3 +11,7 @@ pianoKeys.forEach((key) => {
     key.dataset.key;
     key.addEventListener("click", () => playTune(key.dataset.key));
 })
+
+document.addEventListener("keydown",(evento) => {
+    playTune(evento.key);
+})
